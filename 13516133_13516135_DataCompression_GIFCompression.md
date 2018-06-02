@@ -109,6 +109,6 @@ Pupung Budi Purnama (2004). *Kiat Praktis Menjadi Desainer Web Profesional*. Ele
 -------
 Dibuat oleh:
 
-**13516133** @teresachn 
+**13516133** Teresa
 
-**13516135** @untungtanujaya
+**13516135** Untung Tanujaya
