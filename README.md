@@ -1,37 +1,33 @@
-## Welcome to GitHub Pages
+# GIFCompression
 
-You can use the [editor on GitHub](https://github.com/untungtanujaya/GIFCompression/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+Graphics Interchange Format (GIF) adalah format grafis yang sering digunakan untuk keperluan desain situs web. GIF memiliki kombinasi warna lebih sedikit dibanding JPEG, tetapi mampu menyimpan grafis dengan latar belakang (background) transparan ataupun dalam bentuk animasi sederhana.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+## Bagaimana GIF Dikompresi ?
 
-### Markdown
+GIF diformat dengan kompresi algoritme LZW (Lempel Zev Welch) yang dimiliki oleh Unisys. Pemegang hak cipta GIF kini dipegang oleh CompuServe Incorporated. Awalnya GIF bebas royalti bagi semua pengguna namun tahun 1995. Unisys memutuskan menarik royalti pada vendor pengguna GIF.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+## Penjelasan algoritma Lempel–Ziv–Welch
 
-```markdown
-Syntax highlighted code block
+### Definisi
 
-# Header 1
-## Header 2
-### Header 3
+Algoritma LZW dikembangkan dari metode kompresi yang dibuat oleh Ziv dan Lempel pada tahun 1977. Algoritma ini melakukan kompresi dengan menggunakan dictionary, di mana fragmen-fragmen teks digantikan dengan indeks yang diperoleh dari sebuah “kamus”. Prinsip sejenis juga digunakan dalam kode Braille, di mana kode-kode khusus digunakan untuk merepresentasikan kata-kata yang ada. Pendekatan ini bersifat adaptif dan efektif karena banyak karakter dapat dikodekan dengan mengacu pada string yang telah muncul sebelumnya dalam teks. Prinsip kompresi tercapai jika referensi dalam bentuk pointer dapat disimpan dalam jumlah bit yang lebih sedikit dibandingkan string aslinya.
 
-- Bulleted
-- List
+### Algoritma
 
-1. Numbered
-2. List
+Algoritma Lempel-Ziv-Welch untuk melakukan kompresi adalah sebagai berikut:
 
-**Bold** and _Italic_ and `Code` text
+'''
+1.	Dictionary diinisialisasi dengan semua karakter dasar yang ada, dan P adalah kosong. 
+2.	C diisi dengan karakter selanjutnya di dalam teks
+3.	Apakah string P+C terdapat dalam dictionary ?
+  •	Jika ada, maka P = P+C
+  •	Jika tidak, maka :
+    i.	output P ke stream karakter
+    ii.	Tambahkan string P+C ke dalam dictionary
+    iii.	P diisi dengan C
+4.	Apakah terdapat kode lagi di stream kode ?
+  •	Jika ya, maka kembali ke langkah 2.
+  •	Jika tidak, maka terminasi proses (stop).
+'''
 
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/untungtanujaya/GIFCompression/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+Tentunya algoritma ini juga memiliki cara untuk melakukan decoding suatu string yang telah dikompresi. Berikut adalah algoritma untuk decoding:
