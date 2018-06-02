@@ -97,8 +97,13 @@ pW awalnya kosong, dan cW diisi dengan 3. string.cW akan berisi w sehingga dilak
 
 Umumnya indeks yang ditambahkan pada dictionary yang merupakan kombinasi dari dua atau lebih karakter adalah di atas range bit pada karakter yang ada. Misalkan untuk string yang memiliki karakter 8-bit, maka indeks untuk kombinasi dua atau lebih karakter akan dimulai dari 256, karena bit 0 – 255 sudah dipakai untuk melambangkan karakter yang sudah ada.
 
+## Daftar Pustaka
+https://www.w3.org/Graphics/GIF/spec-gif87.txt
+https://www.youtube.com/watch?v=rZ-JRCPv_O8
+Bonnie Soeherman (2008). *Photoshop for Abusement*. Elex Media Komputindo. ISBN 978-979-27-3058-6.
+Pupung Budi Purnama (2004). *Kiat Praktis Menjadi Desainer Web Profesional*. Elex Media Komputindo. ISBN 979-20-5763-3.
 
 -------
 Dibuat oleh:
-**13516133** Teresa
-**13516135** Untung Tanujaya
+**13516133** @teresachn 
+**13516135** @untungtanujaya
