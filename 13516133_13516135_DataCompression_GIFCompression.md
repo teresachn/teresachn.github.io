@@ -99,11 +99,16 @@ Umumnya indeks yang ditambahkan pada dictionary yang merupakan kombinasi dari du
 
 ## Daftar Pustaka
 https://www.w3.org/Graphics/GIF/spec-gif87.txt
+
 https://www.youtube.com/watch?v=rZ-JRCPv_O8
+
 Bonnie Soeherman (2008). *Photoshop for Abusement*. Elex Media Komputindo. ISBN 978-979-27-3058-6.
+
 Pupung Budi Purnama (2004). *Kiat Praktis Menjadi Desainer Web Profesional*. Elex Media Komputindo. ISBN 979-20-5763-3.
 
 -------
 Dibuat oleh:
+
 **13516133** @teresachn 
+
 **13516135** @untungtanujaya
